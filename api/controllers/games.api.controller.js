@@ -157,7 +157,7 @@ function update(req, res) {
 
         const updatedGameData = {
             ...req.body,
-            cover: req.file ? `http://localhost:3000/uploads/games/${req.file.filename}` : existingGame.cover,
+            cover: req.file ? `https://back-production-4d76.up.railway.app/uploads/games/${req.file.filename}` : existingGame.cover,
         };
 
         gamesService.updateGame(id, updatedGameData)
